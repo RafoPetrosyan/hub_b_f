@@ -109,7 +109,7 @@ export default function BusinessTab() {
       const { company, address } = profileData;
 
       reset({
-        businessName: company.name || '',
+        businessName: company.business_name || '',
         subdomain: company.subdomain || '',
         streetAddress: address.line1 || '',
         city: address.city || '',
@@ -178,10 +178,10 @@ export default function BusinessTab() {
       toast.success('Business profile updated successfully!');
     } catch (error: any) {
       console.log('Failed to update company profile:', error);
-      
+
       // Extract error messages from the API response
       const errorMessages = error?.data?.data?.message || error?.data?.message || [];
-      
+
       if (Array.isArray(errorMessages) && errorMessages.length > 0) {
         // Show each error message as a toast
         errorMessages.forEach((message: string) => {
