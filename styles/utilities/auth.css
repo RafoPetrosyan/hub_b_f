@@ -1,0 +1,29 @@
+/* Auth Utilities - Login and Register specific styles */
+
+.login-input {
+  border-color: var(--border-default) !important;
+  border-width: 1px !important;
+  border-radius: 12px;
+}
+
+.login-input:focus {
+  border-color: var(--border-default) !important;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(230, 232, 235, 0.2);
+}
+
+.login-checkbox {
+  border-color: var(--border-default) !important;
+  border-width: 1px !important;
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: var(--color-brand-secondary);
+}
+
+.login-checkbox:focus {
+  outline: 2px solid rgba(90, 147, 187, 0.2);
+  outline-offset: 2px;
+}
+

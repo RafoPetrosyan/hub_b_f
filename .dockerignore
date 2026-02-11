@@ -1,0 +1,9 @@
+.git
+.idea
+.next
+node_modules
+.env
+npm-debug.log
+yarn-error.log
+docker-compose.yml
+README.md

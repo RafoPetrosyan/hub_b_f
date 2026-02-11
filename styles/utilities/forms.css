@@ -1,0 +1,20 @@
+/* Form Utilities - Shared form-related styles */
+
+.phone-input-field {
+  margin-left: 50px;
+  height: 100%;
+  width: 95%;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.flag-dropdown {
+  background-color: white;
+  border: none;
+}
+
+.phone-input-container {
+  height: 100%;
+}
+

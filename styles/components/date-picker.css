@@ -1,0 +1,213 @@
+/* React Day Picker Styles - Simple Clean Design */
+.rdp {
+  --rdp-cell-size: 32px;
+  --rdp-accent-color: var(--primary-500);
+  --rdp-background-color: white;
+  --rdp-accent-color-dark: var(--primary-600);
+  --rdp-background-color-dark: var(--neutral-50);
+  --rdp-outline: 2px solid var(--primary-500);
+  --rdp-outline-selected: 2px solid var(--primary-600);
+  margin: 0;
+  font-family: inherit;
+}
+
+.rdp-months {
+  display: flex;
+  padding: 20px !important;
+}
+
+.rdp-month {
+  margin: 0;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 4px;
+  background-color: var(--neutral-50);
+  border-bottom: 1px solid var(--neutral-200);
+  margin-bottom: 8px;
+}
+
+.rdp-caption_label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--neutral-900);
+  text-transform: capitalize;
+}
+
+.rdp-nav {
+  display: flex;
+  gap: 4px;
+}
+
+.rdp-button_reset {
+  appearance: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdp-button_reset:hover {
+  background-color: var(--neutral-100);
+}
+
+.rdp-button_reset:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+}
+
+.rdp-nav_icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: var(--neutral-600);
+}
+
+.rdp-nav_button_previous .rdp-nav_icon {
+  border-width: 4px 6px 4px 0;
+  border-left-color: transparent;
+  border-right-color: var(--neutral-600);
+}
+
+.rdp-nav_button_next .rdp-nav_icon {
+  border-width: 4px 0 4px 6px;
+  border-right-color: transparent;
+  border-left-color: var(--neutral-600);
+}
+
+.rdp-nav_button_previous:hover .rdp-nav_icon,
+.rdp-nav_button_next:hover .rdp-nav_icon {
+  border-color: var(--neutral-900);
+}
+
+.rdp-nav_button_previous:hover .rdp-nav_icon {
+  border-right-color: var(--neutral-900);
+}
+
+.rdp-nav_button_next:hover .rdp-nav_icon {
+  border-left-color: var(--neutral-900);
+}
+
+.rdp-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.rdp-head_row {
+  display: flex;
+}
+
+.rdp-head_cell {
+  width: var(--rdp-cell-size);
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--neutral-600);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rdp-tbody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rdp-row {
+  display: flex;
+  width: 100%;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.rdp-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--neutral-700);
+  transition: background-color 150ms, color 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rdp-button:hover:not([disabled]) {
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+}
+
+.rdp-button:focus-visible:not([disabled]) {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+}
+
+.rdp-day_selected .rdp-button {
+  background-color: var(--primary-500);
+  color: white;
+  font-weight: 500;
+}
+
+.rdp-day_selected .rdp-button:hover {
+  background-color: var(--primary-600);
+  color: white;
+}
+
+.rdp-day_today .rdp-button {
+  font-weight: 600;
+  color: var(--primary-600);
+}
+
+.rdp-day_today:not(.rdp-day_selected) .rdp-button:hover {
+  background-color: var(--primary-50);
+  color: var(--primary-700);
+}
+
+.rdp-day_today.rdp-day_selected .rdp-button {
+  color: white;
+  font-weight: 600;
+}
+
+.rdp-button[disabled] {
+  color: var(--neutral-300);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.rdp-button[disabled]:hover {
+  background-color: transparent;
+  color: var(--neutral-300);
+}
+
+.rdp-day_outside {
+  opacity: 0.5;
+}
+
+.rdp-day_outside .rdp-button {
+  color: var(--neutral-400);
+}
+

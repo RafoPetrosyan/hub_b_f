@@ -1,0 +1,19 @@
+/* Time Picker Scrollbar Styles */
+.time-picker-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.time-picker-scroll::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 3px;
+}
+
+.time-picker-scroll::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 3px;
+}
+
+.time-picker-scroll::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+

@@ -1,0 +1,328 @@
+:root {
+  /* =========================
+     Primary Brand Colors
+     ========================= */
+  --primary-50: #f6f5fb;
+  --primary-100: #edeaf8;
+  --primary-150: #c1b6e2;
+  --primary-200: #dcd7f2;
+  --primary-300: #c6bfee;
+  --primary-400: #b5aedc;
+  --primary-500: #aba2c9;
+  --primary-600: #9a90bb;
+  --primary-700: #827aa3;
+  --primary-800: #6a648a;
+  --primary-900: #514f70;
+
+  /* =========================
+     Neutral Colors
+     ========================= */
+  --neutral-white: #fbfdff;
+  --neutral-0: #f7faff;
+  --neutral-05: #FAF8F5;
+  --neutral-10: #f4f7fb;
+  --neutral-25: #f1f5fa;
+  --neutral-50: #edf2f7;
+  --neutral-75: #e6ecf3;
+  --neutral-100: #dee6ef;
+  --neutral-200: #cbd7e5;
+  --neutral-300: #b6c6d8;
+  --neutral-400: #9fb1c7;
+  --neutral-500: #8399b3;
+  --neutral-600: #6a819a;
+  --neutral-700: #51677f;
+  --neutral-800: #394e63;
+  --neutral-900: #243546;
+
+  /* =========================
+     Semantic Colors
+     ========================= */
+  --info: #93D5D1;
+  --info-soft: #CDEDEA;
+  --info-light: #E6F6F5;
+
+  --success: #6bbfa3;
+  --success-light: #dff4ec;
+  --success-soft: #f0fdf4;
+
+  --error: #e16b7c;
+  --error-light: #fde3e7;
+  --danger: #EA4335;
+
+  --warning: #f2b97c;
+  --warning-light: #fff1dc;
+
+  /* =========================
+     Background & Foreground
+     ========================= */
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #ffffff;
+  --surface-elevated: #fafafa;
+
+  /* =========================
+     Text Colors
+     ========================= */
+  --text-heading: #3C4653;
+  --text-body: #393E44;
+  --text-secondary: #64748B;
+  --text-label: #7B8186;
+  --text-on-gradient: #FAFBF6;
+  --text-validation: #95B0C4;
+  --text-disable: #CFD4DB;
+  --text-strong: #232931;
+  --text-subheading: #414D56;
+  --text-emphasis: #2D343F;
+  --text-muted-strong: #4A4A4A;
+  --text-ultra-strong: #353534;
+  --text-muted: #727471;
+  --text-muted-soft: #7D7F7C;
+  --text-body-strong: #3A3F45;
+
+  /* =========================
+     Border Colors
+     ========================= */
+  --border-default: #E6E8EB;
+  --border-soft: #e7eaee;
+
+  /* =====================================================
+     NEW: NATURAL UI COLORS
+     ===================================================== */
+  --natural-light: #f0f1f3;
+  --natural-light-hover: #e8eaee;
+  --natural-light-active: #cfd4db;
+  --neutral-soft: #D0D5DD;
+  --neutral-soft-strong: #adb5bd;
+
+  --natural-normal: #64748b;
+  --natural-normal-hover: #5a687d;
+  --natural-normal-active: #505d6f;
+
+  --natural-dark: #4b5768;
+  --natural-dark-hover: #3c4653;
+  --natural-dark-active: #2d343f;
+  --natural-darker: #232931;
+
+  /* =====================================================
+     NEW: BLUE UI COLORS
+     ===================================================== */
+  --brand-blue: #0069FF;
+  --blue-50: #f4f9fd;
+  --blue-100: #bbddf2;
+  --blue-light: #f8fcfe;
+  --blue-light-hover: #f5fafe;
+  --blue-light-active: #eaf4fc;
+
+  --blue-normal: #badcf5;
+  --blue-normal-hover: #a7c6dd;
+  --blue-normal-active: #95b0c4;
+
+  --blue-dark: #8ca5b8;
+  --blue-dark-hover: #708493;
+  --blue-dark-active: #54636e;
+  --blue-darker: #414d56;
+
+  /* =====================================================
+     NEW: PRIMARY UI COLORS
+     ===================================================== */
+  --primary-light: #f1f8fd;
+  --primary-light-hover: #eaf4fc;
+  --primary-light-active: #d3e9f8;
+
+  --primary-normal: #71b8ea;
+  --primary-normal-hover: #66a6d3;
+  --primary-normal-active: #5a93bb;
+
+  --primary-dark: #558ab0;
+  --primary-dark-hover: #446e8c;
+  --primary-dark-active: #335369;
+  --primary-darker: #284052;
+
+  /* =====================================================
+   DASHBOARD THEME COLORS (DYNAMIC)
+   ===================================================== */
+  --d-accent-light: #F1F8FD;
+  --d-accent-normal: #bbddf2;
+  --d-accent: #3a5df8;
+  --d-content-bg: #FAFAF8;
+  --d-content-item-bg: #FFFFFF;
+
+  --d-header-title: #3A3F45;
+  --d-horizontal-menu: #505D6F;
+  --d-vertical-menu: #3A3F45;
+  --d-menu-title: #353534;
+  --d-menu-label: #64748B;
+  --d-menu-bg: #FFFFFF;
+  --d-menu-vertical-active-bg: #FAFAF8;
+  --d-title: #3A3F45;
+  --d-sub-title: #64748B;
+  --d-content-item-title: #353534;
+  --d-content-item-sub-title: #7D7F7C;
+
+
+  /* =========================
+   Font Sizes
+   ========================= */
+  --font-size-2xs: 0.625rem; /* 10px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-md: 1.125rem; /* 18px - text-lg equivalent */
+  --font-size-lg: 1.25rem; /* 20px - text-xl equivalent */
+  --font-size-xl: 1.5rem; /* 24px - text-2xl equivalent */
+  --font-size-2xl: 1.75rem; /* 28px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2rem; /* 32px */
+  --font-size-display-sm: 1.75rem; /* 28px */
+  --font-size-display-md: 2.1875rem; /* 35px */
+  --font-size-display-lg: 3rem; /* 48px */
+  --font-size-5xl: 2.25rem; /* 36px */
+  --font-size-display-xl: 2.375rem; /* 38px */
+  --font-size-display-2xl: 2.625rem; /* 42px */
+  --font-size-display-3xl: 2.875rem; /* 46px */
+}
+
+/* =========================
+   Tailwind / Theme Bridge
+   ========================= */
+@theme inline {
+  /* Brand */
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+
+  /* Neutral */
+  --color-neutral-0: var(--neutral-0);
+  --color-neutral-05: var(--neutral-05);
+  --color-neutral-50: var(--neutral-50);
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+
+  /* Text */
+  --color-heading: var(--text-heading);
+  --color-body: var(--text-body);
+  --color-secondary: var(--text-secondary);
+  --color-label: var(--text-label);
+  --color-strong: var(--text-strong);
+
+  --color-border-soft: var(--border-soft);
+  --color-border-default: var(--border-default);
+
+  /* UI COLORS */
+  --color-natural-light: var(--natural-light);
+  --color-natural-light-hover: var(--natural-light-hover);
+  --color-natural-normal: var(--natural-normal);
+  --color-natural-dark: var(--natural-dark);
+  --color-neutral-soft: var(--neutral-soft);
+  --color-neutral-soft-strong: var(--neutral-soft-strong);
+
+  --color-blue-50: var(--blue-50);
+  --color-blue-100: var(--blue-100);
+  --color-blue-light: var(--blue-light);
+  --color-blue-normal: var(--blue-normal);
+  --color-blue-dark: var(--blue-dark);
+  --color-brand-blue: var(--brand-blue);
+
+  --color-primary-light: var(--primary-light);
+  --color-primary-light-active: var(--primary-light-active);
+  --color-primary-normal: var(--primary-normal);
+  --color-primary-normal-active: var(--primary-normal-active);
+  --color-primary-dark: var(--primary-dark);
+
+  --color-d-accent-light: var(--d-accent-light);
+  --color-d-accent-normal: var(--d-accent-normal);
+  --color-d-accent: var(--d-accent);
+  --color-d-header-title: var(--d-header-title);
+  --color-d-horizontal-menu: var(--d-horizontal-menu);
+  --color-d-vertical-menu: var(--d-vertical-menu);
+  --color-d-menu-title: var(--d-menu-title);
+  --color-d-menu-label: var(--d-menu-label);
+  --color-d-menu-bg: var(--d-menu-bg);
+  --color-d-menu-vertical-active-bg: var(--d-menu-vertical-active-bg);
+  --color-d-content-bg: var(--d-content-bg);
+  --color-d-title: var(--d-title);
+  --color-d-sub-title: var(--d-sub-title);
+  --color-d-content-item-bg: var(--d-content-item-bg);
+  --color-d-content-item-title: var(--d-content-item-title);
+  --color-d-content-item-sub-title: var(--d-content-item-sub-title);
+
+  --font-inter: var(--font-inter);
+  --font-gazpacho: var(--font-gazpacho);
+
+  /* Font Sizes - override defaults to use global variables + custom sizes */
+  --text-2xs: var(--font-size-2xs);
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-md: var(--font-size-md);
+  --text-lg: var(--font-size-md);
+  --text-xl: var(--font-size-lg);
+  --text-2xl: var(--font-size-xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+  --text-display-sm: var(--font-size-display-sm);
+  --text-display-md: var(--font-size-display-md);
+  --text-display-lg: var(--font-size-display-lg);
+  --text-5xl: var(--font-size-5xl);
+  --text-display-xl: var(--font-size-display-xl);
+  --text-display-2xl: var(--font-size-display-2xl);
+  --text-display-3xl: var(--font-size-display-3xl);
+
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --color-success: var(--success);
+  --color-success-light: var(--success-light);
+  --color-success-soft: var(--success-soft);
+  --color-error: var(--error);
+  --color-error-light: var(--error-light);
+  --color-warning: var(--warning);
+  --color-warning-light: var(--warning-light);
+  --color-danger: var(--danger);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-text-heading: var(--text-heading);
+  --color-text-body: var(--text-body);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-label: var(--text-label);
+  --color-text-on-gradient: var(--text-on-gradient);
+  --color-text-validation: var(--text-validation);
+  --color-text-disable: var(--text-disable);
+  --color-text-strong: var(--text-strong);
+  --color-text-subheading: var(--text-subheading);
+  --color-text-emphasis: var(--text-emphasis);
+  --color-text-muted-strong: var(--text-muted-strong);
+  --color-text-ultra-strong: var(--text-ultra-strong);
+  --color-text-muted: var(--text-muted);
+  --color-text-muted-soft: var(--text-muted-soft);
+  --color-text-body-strong: var(--text-body-strong);
+}
+
+/* =========================
+   Dark Mode
+   ========================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --surface: #171717;
+    --surface-elevated: #262626;
+  }
+}
