@@ -259,6 +259,7 @@ export default function ContactTab({ userData, session }: ContactTabProps) {
 
       {/* Change Password Modal */}
       <ChangePasswordModal
+        step={'2fa'}
         isOpen={isChangePasswordModalOpen}
         onClose={() => setIsChangePasswordModalOpen(false)}
         onSuccess={() => {
